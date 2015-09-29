@@ -56,21 +56,11 @@ Explanation on implemented methods
 rsa.rb
 
 
-I made sure to make the behavior of everything within my program explicit and intuitive with minimal explanation, so most of the 
-
-implemented methods don't have anything notable worth mentioning.
+I made sure to make the behavior of everything within my program explicit and intuitive with minimal explanation, so most of the implemented methods don't have anything notable worth mentioning.
 
 The only notable thing I can think of is the 'ext_euclidean' method vs the 'mod_inverse' method.
 ext_euclidean returns a hash containing the x, y, and gcd found through the Extended Euclidean algorithm. mod_inverse is 
 
-essentially the same thing, albeit slightly more simplified. Since we don't need all three variables, it only returns the number 
+essentially the same thing, albeit slightly more simplified. Since we don't need all three variables, it only returns the number needed in calculating 'd' for a secret key.
 
-needed in calculating 'd' for a secret key.
-
-A nice feature of Ruby is that all classes are open, meaning you can go into existing classes and add new behavior with ease. I 
-
-did this with the String#from_ascii_int and #to_ascii_int methods. In these methods, I'm essentially converting from/to base 128. 
-
-However, since I'm only displaying the encrypted message as a base 10 string rather than a base 128 string, this isn't a true 
-
-base conversion - hence the odd names.
+A nice feature of Ruby is that all classes are open, meaning you can go into existing classes and add new behavior with ease. I did this with the String#from_ascii_int and #to_ascii_int methods. In these methods, I'm essentially converting from/to base 128. However, since I'm only displaying the encrypted message as a base 10 string rather than a base 128 string, this isn't a true base conversion - hence the odd names.
