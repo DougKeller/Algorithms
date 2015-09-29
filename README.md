@@ -5,35 +5,40 @@ README
 
 This program has 6 behaviors, depending on the number of arguments given:
 
-0:	
+0:
+
 	The program will prompt the user for a message to encrypt.
 	Outputs:
 	  - A pair of public/secret keys capable of encrypting the given message
 	  - The result of encrypting the message with the public key
 	  - The result of decrypting the encrypted message with the secret key
 
-1:	
+1:
+
 	For argument n, outputs a prime number n digits long.
 	  e.g.
 		>rsa.exe 10
 	  ## Outputs
 		1912997173
 
-2:	
+2:
+
 	For arguments a and b, outputs two digits x and y such that ax + by = gcd(a, b)
 	  e.g.
 		>rsa.exe 5 12
 	  ## Outputs
 		x = 5,  y = -2, gcd = 1
 
-3:	
+3:
+
 	For arguments e, p, and q: Outputs (d, n) such that ed = 1 % (p - 1)(q - 1)
 	  e.g.
 		>rsa.exe 17 37 43
 	  ## Outputs
 		d = 89, n = 1591
 
-4:	
+4:
+
 	For arguments 'e', e, n, message: Outputs message in its encrypted form, given a public key (e, n)
 	  e.g.
 		>rsa.exe 'e' 487 3551 A
