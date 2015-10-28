@@ -1,0 +1,105 @@
+html {
+	margin: auto;
+	background: #3D5266;
+	width: 100%;
+}
+
+body {
+	text-align: center;
+	padding: 30px;
+	margin: auto;
+	width: 800px;
+	border: 2px solid #444;
+	background: #eee;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	box-sizing: border-box;
+	padding: 10px;
+	resize: vertical;
+}
+
+h1, h2, h3, h4 {
+	margin: 0px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 15px; color: #555; }
+h3 { font-size: 15px; float: left; }
+h4 { font-size: 20px; }
+
+hr {
+	width: 50%;
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+span {
+	margin: 0px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #888;
+	font-size: 12px;
+}
+
+table {
+	border: 1px solid #999;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: left;
+	margin: auto;
+}
+
+select {
+	padding: 8px;
+    background: #fafafa;
+    color: #666;
+    width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+td, th {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+td.code {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.submit {
+	width: 100px;
+	height: 60px;
+}
+
+.file-upload {
+	padding: 30px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.input {
+	padding: 50px;
+	padding-top: 20px;
+	margin: auto;
+	width: 75%;
+}
+
+.output {
+	padding: 50px;
+	margin: auto;
+	padding-top: 0px;
+	width: 75%;
+	word-wrap: break-word;
+}
+
+
