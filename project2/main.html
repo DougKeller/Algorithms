@@ -1,0 +1,83 @@
+<html ng-app="dwk24">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+<div ng-controller="ProjectController">
+	<h1>Douglas Keller</h1>
+	<hr>
+	<h2>Huffman Coding</h2>
+	<br>
+
+	<select ng-model="encode" ng-init="encode = 'true'">
+		<option value="true">Encode</option>
+		<option value="">View Binary</option>
+	</select>
+
+	<section ng-show="encode">
+		<div class="input">
+			<div class="file-upload">
+				<h3>Open a file to compress</h3>
+				<input type="file" open-file>
+			</div>
+			<textarea ng-model="encMessage" ng-change="compress()" placeholder="Or enter your message here!"></textarea>
+			<br>
+			<br>
+			<input type="button" ng-click="save()" value="Save Compressed File" ng-disabled="!encoded">
+		</div>
+		<div class="output">
+			<h4>Output {{ strEncode ? ' - ' + strEncode.length + ' bytes' : '' }}</h4>
+			<hr>
+			<section ng-show="encoded">
+				<div>
+					<h2>Post-order Traversal</h2>
+					{{ traversal }}
+				</div>
+				<br>
+				<div>
+					<table>
+						<tr>
+							<th>Value</th>
+							<th>Code</th>
+						</tr>
+						<tr ng-repeat="node in nodes">
+							<td>{{ node.value }}({{ node.code.length }})</td>
+							<td class="code">{{ node.code }}</td>
+						</tr>
+					</table>
+					<br>
+				</div>
+				<div>
+					<h2>Encoded String</h2>
+						{{ strEncode }}
+						<br><br>
+					<h2>Binary</h2>
+						{{ encoded }}
+				</div>
+			</section>
+		</div>
+	</section>
+	<section ng-hide="encode">
+		<div class="input">
+			<div class="file-upload">
+				<h3>Open a file to display in binary</h3>
+				<input type="file" open-file>
+			</div>
+		</div>
+		<div class="output">
+			<h4>Output {{ decoded ? ' - ' + decMessage.length + ' bytes' : '' }}</h4>
+			<hr>
+			<section ng-show="decoded">
+				<div>					
+					<h2>Binary</h2>
+					{{ decoded }}
+				</div>
+			</section>
+		</div>
+
+	</section>
+</div>
+
+<script src="project2.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</body>
+</html>
