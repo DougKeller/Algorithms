@@ -3,12 +3,14 @@ Duan - Algorithms
 Project 4 Readme
 
 Extra Credit:
+
 	Handling both .ppm and .pgm formats
 	Generating an energy image of an image
 	Generating cumulative vertical/horizontal energy images of the file
 	Drawing the lowest-energy vertical/horizontal seam on the image
 	
 General use:
+
 	Every command for the program starts with 'dkeller_4.exe <filepath>'
 	This loads the image at <filepath> to perform operations on
 	
@@ -53,6 +55,7 @@ General use:
 			Output: fox_hseam.ppm
 			
 Class breakdown
+
 	There are 4 classes in this application.
 	
 	Image: Representation of the loaded/processed image.
@@ -64,5 +67,6 @@ Class breakdown
 	Progress: Utility class, used for showing the progress of the operation in the console
 	
 Notes
+
 	All of the methods in the Image class are pretty straight-forward in my opinion, so I didn't include a description of each one.
 	If you have any questions, please email me.
