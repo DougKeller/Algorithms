@@ -21,13 +21,13 @@ General use:
 		<v_amt> <h_amt>
 			Carves v_amt vertical seams and h_amt horizontal seams from the image
 			
-			Usage:  dkeller_4.exe fox.ppm 100 150
+			Usage:  $ dkeller_4.exe fox.ppm 100 150
 			Output: fox_processed_100_150.ppm
 			
 		energy
 			Creates a grayscale image of the energy values within the image
 			
-			Usage:  dkeller_4.exe fox.ppm energy
+			Usage:  $ dkeller_4.exe fox.ppm energy
 			Output: fox_energy.pgm
 			
 		vgradient
